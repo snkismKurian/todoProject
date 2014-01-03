@@ -24,3 +24,10 @@ function tabFocus(e) {
 }
 
 $.index.open();
+
+$.index.addEventListener("close", function() {
+	//メモリリークを防ぐため
+	$.destroy();
+});
+
+Alloy.Collections.Todo.fetch();
