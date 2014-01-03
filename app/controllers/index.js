@@ -2,10 +2,6 @@ function doClick(e) {
     alert($.label.text);
 }
 
-function addTask() {
-	alert('Add Task Function');
-}
-
 function tabOpen(e) {
 	if (OS_ANDROID) {
 		var activity = $.index.getActivity();
@@ -15,10 +11,16 @@ function tabOpen(e) {
 				icon : '/images/ic_action_edit.png',
 				showAsAction : Ti.Android.SHOW_AS_ACTION_IF_ROOM
 			});
-			menuItem.addEventListener('click', addTask);
+			var tasksController = Alloy.createController('Tasks');
+			menuItem.addEventListener('click', tasksController.addTask);
 		};
 		activity.invalidateOptionsMenu();
 	}
+	Alloy.Globals.currentTab = e.activetab;
+}
+
+function tabFocus(e) {
+	Alloy.Globals.currentTab = e.tab;
 }
 
 $.index.open();

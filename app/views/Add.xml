@@ -1,0 +1,4 @@
+<Alloy>
+	<Window id="addWin" title="Add Task" tabBarHidden="true">
+	</Window>
+</Alloy>

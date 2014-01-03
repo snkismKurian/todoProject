@@ -1,0 +1,1 @@
+module.exports = [{"isApi":true,"priority":1000.0001,"key":"Window","style":{backgroundColor:"#FFFFFF",}},{"isId":true,"priority":100101.0004,"key":"addButton","style":{systemButton:Ti.UI.iPhone.SystemButton.COMPOSE,}}];

@@ -1,14 +1,10 @@
 <Alloy>
-	<TabGroup onOpen="tabOpen">
-		<Tab title="Tasks">
-			<Window title="Tasks">
-				<RightNavButton platform="ios">
-					<Button title="Add" onClick="addTask" id="addButton" / >
-				</RightNavButton>
-			</Window>
+	<TabGroup onOpen="tabOpen" onFocus="tabFocus">
+		<Tab title="Tasks" id="tasksTab">
+			<Require type="view" src="Tasks" />
 		</Tab>
-		<Tab title="Done">
-			<Window title="Done"></Window>
+		<Tab title="Done" id="doneTab">
+			<Require type="view" src="Done" />
 		</Tab>
 	</TabGroup>
 	<Window class="container">

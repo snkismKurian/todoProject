@@ -1,0 +1,11 @@
+<Alloy>
+	<Window title="Tasks">
+		<RightNavButton platform="ios">
+			<Button title="Add" onClick="addTask" id="addButton" / >
+		</RightNavButton>
+		<Menu platform="android">
+			<MenuItem title="Add" onClick="addTask" id="addButton" />
+		</Menu>
+		<TableView id="tasks"></TableView>
+	</Window>
+</Alloy>
