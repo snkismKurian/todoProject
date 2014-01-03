@@ -1,0 +1,11 @@
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+},
+"Window" : {
+	backgroundColor : "#FFFFFF"
+},
+"#addButton[platform=ios]" : {
+	systemButton : Ti.UI.iPhone.SystemButton.COMPOSE
+}

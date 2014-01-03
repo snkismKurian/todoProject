@@ -1,0 +1,17 @@
+<Alloy>
+	<TabGroup onOpen="tabOpen">
+		<Tab title="Tasks">
+			<Window title="Tasks">
+				<RightNavButton platform="ios">
+					<Button title="Add" onClick="addTask" id="addButton" / >
+				</RightNavButton>
+			</Window>
+		</Tab>
+		<Tab title="Done">
+			<Window title="Done"></Window>
+		</Tab>
+	</TabGroup>
+	<Window class="container">
+		<Label id="label" onClick="doClick">Hello, World</Label>
+	</Window>
+</Alloy>
